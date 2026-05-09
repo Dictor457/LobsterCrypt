@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_main"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <ImageView
+            android:id="@+id/appLogo"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:src="@drawable/app_logo"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp" />
+
+        <EditText
+            android:id="@+id/inputField"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="#80000000"
+            android:hint="Текст для обработки..."
+            android:padding="12dp"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="10dp" />
+
+        <EditText
+            android:id="@+id/pinInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#80000000"
+            android:hint="ПИН-код"
+            android:inputType="numberPassword"
+            android:padding="12dp"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="20dp" />
+
+        <Button
+            android:id="@+id/btnEncrypt"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="ЗАШИФРОВАТЬ"
+            android:background="@drawable/button_rect"
+            android:textColor="#FF5500"
+            android:layout_marginBottom="10dp" />
+
+        <Button
+            android:id="@+id/btnDecrypt"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="РАСШИФРОВАТЬ"
+            android:background="@drawable/button_rect"
+            android:textColor="#00AAFF"
+            android:layout_marginBottom="10dp" />
+
+        <Button
+            android:id="@+id/btnClear"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="ОЧИСТИТЬ"
+            android:background="@drawable/button_rect"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="20dp" />
+
+        <TextView
+            android:id="@+id/outputField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#90000000"
+            android:minHeight="80dp"
+            android:padding="12dp"
+            android:textColor="#00FF00"
+            android:textIsSelectable="true"
+            android:layout_marginBottom="20dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnCopy"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="КОПИРОВАТЬ"
+                android:background="@drawable/button_rect"
+                android:layout_marginEnd="5dp" />
+
+            <Button
+                android:id="@+id/btnShare"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="ОТПРАВИТЬ"
+                android:background="@drawable/button_rect"
+                android:layout_marginStart="5dp" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
