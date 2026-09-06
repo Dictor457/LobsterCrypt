@@ -6,3 +6,9 @@ app/.cxx/
 *.o
 *.out
 .qmake.stash
+
+# Built binaries & packages
+*.apk
+*.aab
+build/
+.gradle/
